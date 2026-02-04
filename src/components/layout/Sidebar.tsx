@@ -16,7 +16,14 @@ import {
   Users,
   FileText,
   Calendar,
+  SearchIcon,
 } from "lucide-react";
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupInput,
+} from "@/components/ui/input-group";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const menuItems = [
   { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
@@ -31,6 +38,7 @@ const menuItems = [
 
 function Sidebar() {
   const location = useLocation();
+  const isMobile = useIsMobile();
 
   return (
     <SidebarComponent collapsible="icon">
@@ -45,6 +53,17 @@ function Sidebar() {
           <h1 className="font-semibold text-lg group-data-[state=collapsed]:hidden">
             Zero Dash
           </h1>
+          {isMobile && (
+            <InputGroup className="mt-3">
+              <InputGroupInput
+                id="inline-start-input"
+                placeholder="Type A Keyword"
+              />
+              <InputGroupAddon align="inline-start">
+                <SearchIcon className="text-muted-foreground" />
+              </InputGroupAddon>
+            </InputGroup>
+          )}
         </div>
       </SidebarHeader>
       <SidebarContent>
