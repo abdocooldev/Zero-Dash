@@ -1,0 +1,276 @@
+{
+  "dashboard": {},
+  "users": [
+    {
+      "id": 1,
+      "name": "Abdelrahman Nasser",
+      "gender": "male",
+      "email": "abdelrahman.nasser@example.com",
+      "phone": "+201500032314",
+      "avatar": "https://via.placeholder.com/150?text=Abdelrahman",
+      "bio": "Full-stack developer passionate about creating elegant solutions",
+      "birthDay": "01/04/2000",
+      "joinDate": "10/02/2025",
+      "location": "Cairo, Egypt",
+      "jobTitle": "Frontend Developer",
+      "programmingField": "Web Development",
+      "experienceYears": 5,
+      "paymentMethod": "Credit Card",
+      "paymentEmail": "abdocooldev@gmail.com",
+      "subscription": "Premium",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "Tailwind CSS",
+        "React",
+        "Next.js",
+        "Node.js",
+        "MongoDB",
+        "Express.js",
+        "PHP",
+        "Git/GitHub"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "React Dashboard",
+      "description": "A comprehensive admin dashboard built with React and TypeScript",
+      "budget": "$3000",
+      "client": "Tech Solutions Inc.",
+      "status": "completed",
+      "progress": 100,
+      "startDate": "2025-10-15",
+      "dueDate": "2026-01-20",
+      "teamIds": [1, 4, 7],
+      "technologies": ["React", "TypeScript", "Tailwind CSS"],
+      "thumbnail": "https://via.placeholder.com/300x200?text=React+Dashboard"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "Advanced TypeScript",
+      "instructorId": 3,
+      "description": "Master advanced TypeScript concepts and patterns",
+      "progress": 68,
+      "modules": 8,
+      "completedModules": 5,
+      "duration": "12 weeks",
+      "level": "Advanced",
+      "thumbnail": "https://via.placeholder.com/300x200?text=TypeScript",
+      "price": "$199",
+      "students": 1200,
+      "rating": 4.8
+    }
+  ],
+  "files": [
+    {
+      "id": 1,
+      "name": "project-proposal.pdf",
+      "type": "pdf",
+      "size": "2.4 MB",
+      "dateUploaded": "2026-02-05",
+      "uploader": "Abdelrahman Nasser"
+    }
+  ],
+  "plans": [
+    {
+      "id": 1,
+      "name": "Free",
+      "price": "$0.00",
+      "currency": "$",
+      "features": [
+        {
+          "name": "Access All Text Lessons",
+          "description": "Enjoy unlimited access to all our text-based lessons and tutorials.",
+          "availability": true
+        },
+        {
+          "name": "Access All Videos Lessons",
+          "description": "Enjoy unlimited access to all our video lessons and tutorials.",
+          "availability": true
+        },
+        {
+          "name": "Appear On Leaderboard",
+          "description": "Showcase your skills and achievements on the leaderboard.",
+          "availability": true
+        },
+        {
+          "name": "Browse Content Without Ads",
+          "description": "Enjoy an ad-free browsing experience across the platform.",
+          "availability": false
+        },
+        {
+          "name": "Access All Assignments",
+          "description": "Enjoy unlimited access to all assignments and projects.",
+          "availability": false
+        },
+        {
+          "name": "Get Daily Prizes",
+          "description": "Participate in daily challenges to win exciting prizes.",
+          "availability": false
+        },
+        {
+          "name": "Earn Certificate",
+          "description": "Receive a certificate upon course completion.",
+          "availability": false
+        },
+        {
+          "name": "1 GB Space For Hosting Files",
+          "description": "Get 1 GB of storage space for hosting your files.",
+          "availability": false
+        },
+        {
+          "name": "Access Badge System",
+          "description": "Earn badges for completing courses and achieving milestones.",
+          "availability": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Basic",
+      "price": "7.99",
+      "currency": "$",
+      "features": [
+        {
+          "name": "Access All Text Lessons",
+          "description": "Enjoy unlimited access to all our text-based lessons and tutorials.",
+          "availability": true
+        },
+        {
+          "name": "Access All Videos Lessons",
+          "description": "Enjoy unlimited access to all our video lessons and tutorials.",
+          "availability": true
+        },
+        {
+          "name": "Appear On Leaderboard",
+          "description": "Showcase your skills and achievements on the leaderboard.",
+          "availability": true
+        },
+        {
+          "name": "Browse Content Without Ads",
+          "description": "Enjoy an ad-free browsing experience across the platform.",
+          "availability": true
+        },
+        {
+          "name": "Access All Assignments",
+          "description": "Enjoy unlimited access to all assignments and projects.",
+          "availability": true
+        },
+        {
+          "name": "Get Daily Prizes",
+          "description": "Participate in daily challenges to win exciting prizes.",
+          "availability": true
+        },
+        {
+          "name": "Earn Certificate",
+          "description": "Receive a certificate upon course completion.",
+          "availability": true
+        },
+        {
+          "name": "1 GB Space For Hosting Files",
+          "description": "Get 1 GB of storage space for hosting your files.",
+          "availability": false
+        },
+        {
+          "name": "Access Badge System",
+          "description": "Earn badges for completing courses and achieving milestones.",
+          "availability": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Premium",
+      "price": "19.99",
+      "currency": "$",
+      "features": [
+        {
+          "name": "Access All Text Lessons",
+          "description": "Enjoy unlimited access to all our text-based lessons and tutorials.",
+          "availability": true
+        },
+        {
+          "name": "Access All Videos Lessons",
+          "description": "Enjoy unlimited access to all our video lessons and tutorials.",
+          "availability": true
+        },
+        {
+          "name": "Appear On Leaderboard",
+          "description": "Showcase your skills and achievements on the leaderboard.",
+          "availability": true
+        },
+        {
+          "name": "Browse Content Without Ads",
+          "description": "Enjoy an ad-free browsing experience across the platform.",
+          "availability": true
+        },
+        {
+          "name": "Access All Assignments",
+          "description": "Enjoy unlimited access to all assignments and projects.",
+          "availability": true
+        },
+        {
+          "name": "Get Daily Prizes",
+          "description": "Participate in daily challenges to win exciting prizes.",
+          "availability": true
+        },
+        {
+          "name": "Earn Certificate",
+          "description": "Receive a certificate upon course completion.",
+          "availability": true
+        },
+        {
+          "name": "1 GB Space For Hosting Files",
+          "description": "Get 1 GB of storage space for hosting your files.",
+          "availability": true
+        },
+        {
+          "name": "Access Badge System",
+          "description": "Earn badges for completing courses and achieving milestones.",
+          "availability": true
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "maintenance": false,
+    "maintenanceMessage": "",
+    "siteName": "Zero Dash",
+    "siteLogo": "https://via.placeholder.com/150?text=Zero+Dash",
+    "adminEmail": "admin@zerodash.com",
+    "password": "********",
+    "twoFactorAuth": true,
+    "widgetsControl": {
+      "quickDraft": true,
+      "yearlyTargets": true,
+      "ticketsStatistics": true,
+      "latestNews": true,
+      "topSearchItems": true
+    },
+    "social": {
+      "twitter": "",
+      "facebook": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "backup": {
+      "lastBackup": "2026-02-01",
+      "backupFrequency": {
+        "daily": false,
+        "weekly": true,
+        "monthly": false
+      },
+      "backupLocation": {
+        "local": true,
+        "database": false,
+        "cloud": false
+      }
+    }
+  }
+}
