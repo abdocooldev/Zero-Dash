@@ -1,5 +1,6 @@
+import PageTitle from "@/components/ui/page-title";
 function Settings() {
-  return <div>Settings Page</div>;
+  return <PageTitle>Settings</PageTitle>;
 }
 
 export default Settings;

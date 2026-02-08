@@ -1,5 +1,6 @@
+import PageTitle from "@/components/ui/page-title";
 function Projects() {
-  return <div>Projects Page</div>;
+  return <PageTitle>Projects</PageTitle>;
 }
 
 export default Projects;

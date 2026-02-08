@@ -1,5 +1,7 @@
+import PageTitle from "@/components/ui/page-title";
+
 function Files() {
-  return <div>Files Page</div>;
+  return <PageTitle>Files</PageTitle>;
 }
 
 export default Files;

@@ -1,5 +1,7 @@
+import PageTitle from "@/components/ui/page-title";
+
 function Dashboard() {
-  return <div>Dashboard Page</div>;
+  return <PageTitle>Dashboard</PageTitle>;
 }
 
 export default Dashboard;

@@ -1,5 +1,6 @@
+import PageTitle from "@/components/ui/page-title";
 function Plans() {
-  return <div>Plans Page</div>;
+  return <PageTitle>Plans</PageTitle>;
 }
 
 export default Plans;

@@ -1,5 +1,7 @@
+import PageTitle from "@/components/ui/page-title";
+
 function Courses() {
-  return <div>Courses Page</div>;
+  return <PageTitle>Courses</PageTitle>;
 }
 
 export default Courses;

@@ -31,7 +31,7 @@ const menuItems = [
   { label: "Profile", href: "/profile", icon: User },
   { label: "Projects", href: "/projects", icon: FolderOpen },
   { label: "Courses", href: "/courses", icon: BookOpen },
-  { label: "Friends", href: "/friends", icon: Users },
+  { label: "Team", href: "/team", icon: Users },
   { label: "Files", href: "/files", icon: FileText },
   { label: "Plans", href: "/plans", icon: Calendar },
 ];
