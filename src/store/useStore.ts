@@ -4,7 +4,7 @@ import { devtools } from "zustand/middleware";
 export interface User {
   id: number;
   name: string;
-  gender: "male" | "female";
+  gender: "Male" | "Female";
   email: string;
   phone: string;
   avatar?: string;
@@ -20,14 +20,29 @@ export interface User {
   subscription: string;
   skills: string[];
 }
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  budget: number;
+  currency: string;
+  status: "Pending" | "In Progress" | "Completed" | "Rejected";
+  progress: number;
+  startDate: string;
+  deadline: string;
+  teamMembers: number[];
+  technologies: string[];
+}
 
 interface StoreState {
   users: User[];
+  projects: Project[];
   loading: boolean;
   error: string | null;
 
   fetchAllData: () => Promise<void>;
   fetchUsers: () => Promise<void>;
+  fetchProjects: () => Promise<void>;
   setError: (error: string | null) => void;
   clearError: () => void;
 }
@@ -39,6 +54,7 @@ const useStore = create<StoreState>()(
     (set, get) => ({
       // Initial state
       users: [],
+      projects: [],
       loading: false,
       error: null,
 
@@ -46,7 +62,7 @@ const useStore = create<StoreState>()(
       fetchAllData: async () => {
         set({ loading: true, error: null });
         try {
-          await Promise.all([get().fetchUsers()]);
+          await Promise.all([get().fetchUsers(), get().fetchProjects()]);
           set({ loading: false });
         } catch (error) {
           const errorMessage =
@@ -64,6 +80,18 @@ const useStore = create<StoreState>()(
           set({ users: data || [] });
         } catch (error) {
           console.error("Error fetching users:", error);
+          throw error;
+        }
+      },
+
+      fetchProjects: async () => {
+        try {
+          const response = await fetch(`${API_BASE_URL}/projects`);
+          if (!response.ok) throw new Error("Failed to fetch projects");
+          const data = await response.json();
+          set({ projects: data || [] });
+        } catch (error) {
+          console.error("Error fetching projects:", error);
           throw error;
         }
       },

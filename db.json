@@ -4,7 +4,7 @@
     {
       "id": 1,
       "name": "Abdelrahman Nasser",
-      "gender": "male",
+      "gender": "Male",
       "email": "abdelrahman.nasser@example.com",
       "phone": "+201500032314",
       "avatar": "https://github.com/abdocooldev.png",
@@ -36,7 +36,7 @@
     {
       "id": 2,
       "name": "Sarah Williams",
-      "gender": "female",
+      "gender": "Female",
       "email": "sarah.williams@example.com",
       "phone": "+1-555-0142",
       "bio": "React specialist with 4 years of experience in frontend development",
@@ -63,7 +63,7 @@
     {
       "id": 3,
       "name": "Mohammed Al-Rashid",
-      "gender": "male",
+      "gender": "Male",
       "email": "m.rashid@example.com",
       "phone": "+966501234567",
       "bio": "Backend engineer specializing in cloud infrastructure and microservices",
@@ -92,7 +92,7 @@
     {
       "id": 4,
       "name": "Emily Chen",
-      "gender": "female",
+      "gender": "Female",
       "email": "emily.chen@example.com",
       "phone": "+1-555-0189",
       "bio": "Data scientist and ML engineer focused on building intelligent solutions",
@@ -120,7 +120,7 @@
     {
       "id": 5,
       "name": "Lucas Martins",
-      "gender": "male",
+      "gender": "Male",
       "email": "lucas.martins@example.com",
       "phone": "+55-11-98765-4321",
       "bio": "DevOps engineer with expertise in CI/CD pipelines and cloud deployment",
@@ -149,7 +149,7 @@
     {
       "id": 6,
       "name": "Priya Patel",
-      "gender": "female",
+      "gender": "Female",
       "email": "priya.patel@example.com",
       "phone": "+91-9876543210",
       "bio": "Full-stack developer specializing in React and Node.js applications",
@@ -177,7 +177,7 @@
     {
       "id": 7,
       "name": "James Anderson",
-      "gender": "male",
+      "gender": "Male",
       "email": "james.anderson@example.com",
       "phone": "+44-7911-123456",
       "bio": "Security specialist focused on application and infrastructure security",
@@ -206,7 +206,7 @@
     {
       "id": 8,
       "name": "Aisha Mohamed",
-      "gender": "female",
+      "gender": "Female",
       "email": "aisha.mohamed@example.com",
       "phone": "+212661234567",
       "bio": "Mobile developer creating cross-platform applications for iOS and Android",
@@ -234,7 +234,7 @@
     {
       "id": 9,
       "name": "David Thompson",
-      "gender": "male",
+      "gender": "Male",
       "email": "david.thompson@example.com",
       "phone": "+1-555-0198",
       "bio": "Backend developer with strong expertise in distributed systems",
@@ -262,7 +262,7 @@
     {
       "id": 10,
       "name": "Yuki Tanaka",
-      "gender": "female",
+      "gender": "Female",
       "email": "yuki.tanaka@example.com",
       "phone": "+81-90-1234-5678",
       "bio": "Frontend developer passionate about UI/UX and performance optimization",
@@ -290,7 +290,7 @@
     {
       "id": 11,
       "name": "Carlos Rodriguez",
-      "gender": "male",
+      "gender": "Male",
       "email": "carlos.rodriguez@example.com",
       "phone": "+34-912-345-678",
       "bio": "Full-stack developer with expertise in Python and JavaScript ecosystems",
@@ -318,7 +318,7 @@
     {
       "id": 12,
       "name": "Nina Petrov",
-      "gender": "female",
+      "gender": "Female",
       "email": "nina.petrov@example.com",
       "phone": "+7-950-123-45-67",
       "bio": "Game developer experienced in Unreal Engine and C++ optimization",
@@ -346,17 +346,145 @@
   "projects": [
     {
       "id": 1,
-      "title": "React Dashboard",
+      "title": "ZeroDash Admin Dashboard",
       "description": "A comprehensive admin dashboard built with React and TypeScript",
-      "budget": "$3000",
+      "budget": 3000,
+      "currency": "$",
       "client": "Tech Solutions Inc.",
-      "status": "completed",
+      "status": "Completed",
       "progress": 100,
-      "startDate": "2025-10-15",
-      "dueDate": "2026-01-20",
-      "teamIds": [1, 4, 7],
-      "technologies": ["React", "TypeScript", "Tailwind CSS"],
-      "thumbnail": "https://via.placeholder.com/300x200?text=React+Dashboard"
+      "startDate": "01/02/2026",
+      "deadline": "14/02/2026",
+      "teamMembers": [1],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Zustand"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "E-Commerce Platform",
+      "description": "Full-stack e-commerce platform with payment integration",
+      "budget": 8500,
+      "currency": "$",
+      "client": "Digital Retail Corp",
+      "status": "In Progress",
+      "progress": 65,
+      "startDate": "05/01/2026",
+      "deadline": "30/03/2026",
+      "teamMembers": [1, 2, 3, 5],
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe", "AWS"]
+    },
+    {
+      "id": 3,
+      "title": "Mobile Banking App",
+      "description": "Cross-platform mobile banking application for iOS and Android",
+      "budget": 12000,
+      "currency": "$",
+      "client": "FinanceFlow Bank",
+      "status": "In Progress",
+      "progress": 45,
+      "startDate": "15/01/2026",
+      "deadline": "30/04/2026",
+      "teamMembers": [8, 5, 6, 11],
+      "technologies": [
+        "React Native",
+        "Firebase",
+        "Redux",
+        "REST API",
+        "Security"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "AI Content Generator",
+      "description": "Machine learning model for automated content generation",
+      "budget": 15000,
+      "currency": "$",
+      "client": "ContentAI Labs",
+      "status": "Pending",
+      "progress": 10,
+      "startDate": "01/03/2026",
+      "deadline": "31/05/2026",
+      "teamMembers": [4, 9, 3, 10],
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "FastAPI",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Cloud Infrastructure Migration",
+      "description": "Migrate existing infrastructure to cloud with CI/CD pipeline",
+      "budget": 5500,
+      "currency": "$",
+      "client": "Enterprise Solutions Ltd",
+      "status": "In Progress",
+      "progress": 78,
+      "startDate": "10/01/2026",
+      "deadline": "28/02/2026",
+      "teamMembers": [5, 7, 9],
+      "technologies": ["AWS", "Docker", "Kubernetes", "Jenkins", "Terraform"]
+    },
+    {
+      "id": 6,
+      "title": "Security Audit & Penetration Testing",
+      "description": "Comprehensive security audit and penetration testing for client apps",
+      "budget": 7000,
+      "currency": "$",
+      "client": "SecureNet Inc",
+      "status": "Rejected",
+      "progress": 0,
+      "startDate": "20/02/2026",
+      "deadline": "20/03/2026",
+      "teamMembers": [7],
+      "technologies": [
+        "Penetration Testing",
+        "OWASP",
+        "Network Security",
+        "Compliance",
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Game Development - Unity Project",
+      "description": "3D multiplayer game development using Unreal Engine",
+      "budget": 20000,
+      "currency": "$",
+      "client": "GameStudio Productions",
+      "status": "Pending",
+      "progress": 5,
+      "startDate": "01/04/2026",
+      "deadline": "31/08/2026",
+      "teamMembers": [12, 1, 2],
+      "technologies": [
+        "Unreal Engine",
+        "C++",
+        "Networking",
+        "Graphics Programming",
+        "Physics Engine"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Data Analytics Dashboard",
+      "description": "Real-time data visualization and analytics dashboard",
+      "budget": 6800,
+      "currency": "$",
+      "client": "DataViz Corp",
+      "status": "In Progress",
+      "progress": 55,
+      "startDate": "08/02/2026",
+      "deadline": "31/03/2026",
+      "teamMembers": [2, 4, 10, 6],
+      "technologies": ["React", "D3.js", "Python", "PostgreSQL", "Redis"]
     }
   ],
   "courses": [
@@ -390,7 +518,7 @@
     {
       "id": 1,
       "name": "Free",
-      "price": "$0.00",
+      "price": "0.00",
       "currency": "$",
       "features": [
         {
