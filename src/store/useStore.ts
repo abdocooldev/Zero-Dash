@@ -33,16 +33,32 @@ interface Project {
   teamMembers: number[];
   technologies: string[];
 }
+interface Course {
+  id: number;
+  title: string;
+  description: string;
+  instructorId: number;
+  modules: number;
+  duration: string;
+  level: "Beginner" | "Intermediate" | "Advanced";
+  thumbnail?: string;
+  price: number;
+  currency: string;
+  students: number;
+  rating: number;
+}
 
 interface StoreState {
   users: User[];
   projects: Project[];
+  courses: Course[];
   loading: boolean;
   error: string | null;
 
   fetchAllData: () => Promise<void>;
   fetchUsers: () => Promise<void>;
   fetchProjects: () => Promise<void>;
+  fetchCourses: () => Promise<void>;
   setError: (error: string | null) => void;
   clearError: () => void;
 }
@@ -55,6 +71,7 @@ const useStore = create<StoreState>()(
       // Initial state
       users: [],
       projects: [],
+      courses: [],
       loading: false,
       error: null,
 
@@ -62,7 +79,11 @@ const useStore = create<StoreState>()(
       fetchAllData: async () => {
         set({ loading: true, error: null });
         try {
-          await Promise.all([get().fetchUsers(), get().fetchProjects()]);
+          await Promise.all([
+            get().fetchUsers(),
+            get().fetchProjects(),
+            get().fetchCourses(),
+          ]);
           set({ loading: false });
         } catch (error) {
           const errorMessage =
@@ -92,6 +113,18 @@ const useStore = create<StoreState>()(
           set({ projects: data || [] });
         } catch (error) {
           console.error("Error fetching projects:", error);
+          throw error;
+        }
+      },
+
+      fetchCourses: async () => {
+        try {
+          const response = await fetch(`${API_BASE_URL}/courses`);
+          if (!response.ok) throw new Error("Failed to fetch courses");
+          const data = await response.json();
+          set({ courses: data || [] });
+        } catch (error) {
+          console.error("Error fetching courses: ", error);
           throw error;
         }
       },

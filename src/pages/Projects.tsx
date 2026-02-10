@@ -48,11 +48,9 @@ function Projects() {
                   const member = users.find((user) => user.id === memberId);
                   if (!member) return null;
                   return (
-                    <Tooltip>
+                    <Tooltip key={member.id}>
                       <TooltipTrigger>
-                        <Avatar
-                          key={member.id}
-                          className="hover:z-10 size-10 cursor-pointer">
+                        <Avatar className="hover:z-10 size-10 cursor-pointer">
                           {member.avatar ? (
                             <>
                               <AvatarImage
