@@ -604,11 +604,243 @@
   "files": [
     {
       "id": 1,
+      "name": "design-mockup.fig",
+      "type": "fig",
+      "category": "Design",
+      "size": 5.2,
+      "unit": "MB",
+      "dateUploaded": "2026-01-05",
+      "uploader": "Sarah Williams"
+    },
+    {
+      "id": 2,
+      "name": "ui-components.psd",
+      "type": "psd",
+      "category": "Design",
+      "size": 8.7,
+      "unit": "MB",
+      "dateUploaded": "2026-01-08",
+      "uploader": "Yuki Tanaka"
+    },
+    {
+      "id": 3,
+      "name": "tutorial-intro.mp4",
+      "type": "mp4",
+      "category": "Video",
+      "size": 145.3,
+      "unit": "MB",
+      "dateUploaded": "2026-01-10",
+      "uploader": "David Thompson"
+    },
+    {
+      "id": 4,
+      "name": "logo-design.ai",
+      "type": "ai",
+      "category": "Design",
+      "size": 3.1,
+      "unit": "MB",
+      "dateUploaded": "2026-01-12",
+      "uploader": "Emily Rodriguez"
+    },
+    {
+      "id": 5,
+      "name": "screenshot-01.png",
+      "type": "png",
+      "category": "Image",
+      "size": 0.8,
+      "unit": "MB",
+      "dateUploaded": "2026-01-14",
+      "uploader": "Carlos Rodriguez"
+    },
+    {
+      "id": 6,
+      "name": "database-schema.docx",
+      "type": "docx",
+      "category": "Document",
+      "size": 1.5,
+      "unit": "MB",
+      "dateUploaded": "2026-01-16",
+      "uploader": "Marcus Johnson"
+    },
+    {
+      "id": 7,
+      "name": "presentation.pdf",
+      "type": "pdf",
+      "category": "Document",
+      "size": 3.2,
+      "unit": "MB",
+      "dateUploaded": "2026-01-18",
+      "uploader": "Abdelrahman Nasser"
+    },
+    {
+      "id": 8,
+      "name": "banner-animation.webm",
+      "type": "webm",
+      "category": "Video",
+      "size": 42.5,
+      "unit": "MB",
+      "dateUploaded": "2026-01-20",
+      "uploader": "Aisha Mohamed"
+    },
+    {
+      "id": 9,
+      "name": "team-photo.jpg",
+      "type": "jpg",
+      "category": "Image",
+      "size": 2.1,
+      "unit": "MB",
+      "dateUploaded": "2026-01-22",
+      "uploader": "Sofia Martinez"
+    },
+    {
+      "id": 10,
+      "name": "api-documentation.pdf",
+      "type": "pdf",
+      "category": "Document",
+      "size": 4.8,
+      "unit": "MB",
+      "dateUploaded": "2026-01-24",
+      "uploader": "James Chen"
+    },
+    {
+      "id": 11,
+      "name": "mobile-mockup.fig",
+      "type": "fig",
+      "category": "Design",
+      "size": 6.4,
+      "unit": "MB",
+      "dateUploaded": "2026-01-26",
+      "uploader": "Yuki Tanaka"
+    },
+    {
+      "id": 12,
+      "name": "demo-video.mp4",
+      "type": "mp4",
+      "category": "Video",
+      "size": 238.6,
+      "unit": "MB",
+      "dateUploaded": "2026-01-28",
+      "uploader": "David Thompson"
+    },
+    {
+      "id": 13,
+      "name": "icon-pack.webp",
+      "type": "webp",
+      "category": "Image",
+      "size": 1.3,
+      "unit": "MB",
+      "dateUploaded": "2026-01-30",
+      "uploader": "Carlos Rodriguez"
+    },
+    {
+      "id": 14,
+      "name": "project-requirements.docx",
+      "type": "docx",
+      "category": "Document",
+      "size": 2.7,
+      "unit": "MB",
+      "dateUploaded": "2026-02-01",
+      "uploader": "Emily Rodriguez"
+    },
+    {
+      "id": 15,
+      "name": "brand-guidelines.pdf",
+      "type": "pdf",
+      "category": "Document",
+      "size": 5.1,
+      "unit": "MB",
+      "dateUploaded": "2026-02-02",
+      "uploader": "Sarah Williams"
+    },
+    {
+      "id": 16,
+      "name": "website-redesign.psd",
+      "type": "psd",
+      "category": "Design",
+      "size": 12.3,
+      "unit": "MB",
+      "dateUploaded": "2026-02-03",
+      "uploader": "Marcus Johnson"
+    },
+    {
+      "id": 17,
+      "name": "tutorial-advanced.webm",
+      "type": "webm",
+      "category": "Video",
+      "size": 89.4,
+      "unit": "MB",
+      "dateUploaded": "2026-02-04",
+      "uploader": "Aisha Mohamed"
+    },
+    {
+      "id": 18,
+      "name": "screenshot-dashboard.png",
+      "type": "png",
+      "category": "Image",
+      "size": 1.6,
+      "unit": "MB",
+      "dateUploaded": "2026-02-04",
+      "uploader": "James Chen"
+    },
+    {
+      "id": 19,
+      "name": "app-icon.ai",
+      "type": "ai",
+      "category": "Design",
+      "size": 2.9,
+      "unit": "MB",
+      "dateUploaded": "2026-02-05",
+      "uploader": "Sofia Martinez"
+    },
+    {
+      "id": 20,
       "name": "project-proposal.pdf",
       "type": "pdf",
-      "size": "2.4 MB",
+      "category": "Document",
+      "size": 2.4,
+      "unit": "MB",
       "dateUploaded": "2026-02-05",
       "uploader": "Abdelrahman Nasser"
+    },
+    {
+      "id": 21,
+      "name": "feature-demo.mp4",
+      "type": "mp4",
+      "category": "Video",
+      "size": 156.8,
+      "unit": "MB",
+      "dateUploaded": "2026-02-06",
+      "uploader": "David Thompson"
+    },
+    {
+      "id": 22,
+      "name": "portfolio-image.jpg",
+      "type": "jpg",
+      "category": "Image",
+      "size": 3.4,
+      "unit": "MB",
+      "dateUploaded": "2026-02-07",
+      "uploader": "Sarah Williams"
+    },
+    {
+      "id": 23,
+      "name": "meeting-notes.docx",
+      "type": "docx",
+      "category": "Document",
+      "size": 0.9,
+      "unit": "MB",
+      "dateUploaded": "2026-02-08",
+      "uploader": "Carlos Rodriguez"
+    },
+    {
+      "id": 24,
+      "name": "illustration-pack.webp",
+      "type": "webp",
+      "category": "Image",
+      "size": 4.2,
+      "unit": "MB",
+      "dateUploaded": "2026-02-09",
+      "uploader": "Emily Rodriguez"
     }
   ],
   "plans": [

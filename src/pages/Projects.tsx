@@ -45,7 +45,7 @@ function Projects() {
               </CardDescription>
               <AvatarGroup>
                 {project.teamMembers.map((memberId) => {
-                  const member = users.find((user) => user.id === memberId);
+                  const member = users.find((user) => user.id == memberId);
                   if (!member) return null;
                   return (
                     <Tooltip key={member.id}>
@@ -58,8 +58,10 @@ function Projects() {
                                 alt={member.name}
                               />
                               <AvatarFallback>
-                                {member.name.split(" ")[0][0] +
-                                  member.name.split(" ")[1][0]}
+                                {member.name.split(" ").length >= 2
+                                  ? member.name.split(" ")[0][0] +
+                                    member.name.split(" ")[1][0]
+                                  : member.name[0]}
                               </AvatarFallback>
                             </>
                           ) : (

@@ -28,7 +28,7 @@ function Courses() {
       <div className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-4">
         {courses.map((course) => {
           const instructor = users.find(
-            (user) => user.id === course.instructorId,
+            (user) => user.id == course.instructorId,
           );
           return (
             <Card
@@ -47,8 +47,10 @@ function Courses() {
                               alt={instructor.name}
                             />
                             <AvatarFallback>
-                              {instructor.name.split(" ")[0][0] +
-                                instructor.name.split(" ")[1][0]}
+                              {instructor.name.split(" ").length >= 2
+                                ? instructor.name.split(" ")[0][0] +
+                                  instructor.name.split(" ")[1][0]
+                                : instructor.name[0]}
                             </AvatarFallback>
                           </>
                         ) : (
