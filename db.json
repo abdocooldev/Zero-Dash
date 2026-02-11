@@ -847,7 +847,7 @@
     {
       "id": 1,
       "name": "Free",
-      "price": "0.00",
+      "price": 0,
       "currency": "$",
       "features": [
         {
@@ -900,7 +900,7 @@
     {
       "id": 2,
       "name": "Basic",
-      "price": "7.99",
+      "price": 7.99,
       "currency": "$",
       "features": [
         {
@@ -953,7 +953,7 @@
     {
       "id": 3,
       "name": "Premium",
-      "price": "19.99",
+      "price": 19.99,
       "currency": "$",
       "features": [
         {

@@ -58,11 +58,23 @@ interface File {
   uploader: string;
 }
 
+interface Plan {
+  id: number;
+  name: string;
+  price: number;
+  currency: string;
+  features: {
+    name: string;
+    description: string;
+    availability: boolean;
+  }[];
+}
 interface StoreState {
   users: User[];
   projects: Project[];
   courses: Course[];
   files: File[];
+  plans: Plan[];
   loading: boolean;
   error: string | null;
 
@@ -71,6 +83,7 @@ interface StoreState {
   fetchProjects: () => Promise<void>;
   fetchCourses: () => Promise<void>;
   fetchFiles: () => Promise<void>;
+  fetchPlans: () => Promise<void>;
   setError: (error: string | null) => void;
   clearError: () => void;
 }
@@ -85,6 +98,7 @@ const useStore = create<StoreState>()(
       projects: [],
       courses: [],
       files: [],
+      plans: [],
       loading: false,
       error: null,
 
@@ -97,6 +111,7 @@ const useStore = create<StoreState>()(
             get().fetchProjects(),
             get().fetchCourses(),
             get().fetchFiles(),
+            get().fetchPlans(),
           ]);
           set({ loading: false });
         } catch (error) {
@@ -151,6 +166,18 @@ const useStore = create<StoreState>()(
           set({ files: data || [] });
         } catch (error) {
           console.error("Error fetching files: ", error);
+          throw error;
+        }
+      },
+
+      fetchPlans: async () => {
+        try {
+          const response = await fetch(`${API_BASE_URL}/plans`);
+          if (!response.ok) throw new Error("Failed to fetch plans");
+          const data = await response.json();
+          set({ plans: data || [] });
+        } catch (error) {
+          console.error("Error fetching plans: ", error);
           throw error;
         }
       },
