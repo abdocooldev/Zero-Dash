@@ -80,6 +80,7 @@ interface StoreState {
 
   fetchAllData: () => Promise<void>;
   fetchUsers: () => Promise<void>;
+  fetchUser: (id: number) => Promise<User>;
   fetchProjects: () => Promise<void>;
   fetchCourses: () => Promise<void>;
   fetchFiles: () => Promise<void>;
@@ -130,6 +131,18 @@ const useStore = create<StoreState>()(
           set({ users: data || [] });
         } catch (error) {
           console.error("Error fetching users:", error);
+          throw error;
+        }
+      },
+
+      fetchUser: async (id: number) => {
+        try {
+          const response = await fetch(`${API_BASE_URL}/users/${id}`);
+          if (!response.ok) throw new Error("Failed to fetch user");
+          const data = await response.json();
+          return data;
+        } catch (error) {
+          console.error("Error fetching user:", error);
           throw error;
         }
       },

@@ -25,6 +25,7 @@ function App() {
           <Route index element={<Dashboard />} />
           <Route path="settings" element={<Settings />} />
           <Route path="profile" element={<Profile />} />
+          <Route path="profile/:id" element={<Profile />} />
           <Route path="projects" element={<Projects />} />
           <Route path="courses" element={<Courses />} />
           <Route path="team" element={<Team />} />

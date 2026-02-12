@@ -15,6 +15,7 @@ import {
 import useStore from "@/store/useStore";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 function Team() {
   const users = useStore((state) => state.users);
   return (
@@ -71,10 +72,11 @@ function Team() {
               </span>
               <div className="flex gap-2">
                 <Button
+                  asChild
                   variant="default"
                   size="xs"
                   className="bg-blue-500 text-white">
-                  Profile
+                  <Link to={`/profile/${user.id}`}>Profile</Link>
                 </Button>
                 <Button
                   variant="default"
