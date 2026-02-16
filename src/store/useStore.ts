@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
+import Settings from "./../pages/Settings";
 
 export interface User {
   id: number;
@@ -69,12 +70,53 @@ interface Plan {
     availability: boolean;
   }[];
 }
+interface Setting {
+  maintenance: boolean;
+  maintenanceMessage: string;
+  siteName: string;
+  siteLogo: string;
+  adminEmail: string;
+  adminFirstName: string;
+  adminLastName: string;
+  password: string;
+  passLastChange: string;
+  twoFactorAuth: boolean;
+  widgetsControl: {
+    quickDraft: boolean;
+    yearlyTargets: boolean;
+    ticketsStatistics: boolean;
+    latestNews: boolean;
+    latestTasks: boolean;
+    topSearchItems: boolean;
+  };
+  social: {
+    twitter: string;
+    facebook: string;
+    linkedin: string;
+    youtube: string;
+  };
+  backup: {
+    lastBackup: string;
+    backupFrequency: {
+      daily: boolean;
+      weekly: boolean;
+      monthly: boolean;
+    };
+    backupLocation: {
+      local: boolean;
+      database: boolean;
+      cloud: boolean;
+    };
+  };
+}
+
 interface StoreState {
   users: User[];
   projects: Project[];
   courses: Course[];
   files: File[];
   plans: Plan[];
+  settings: Setting;
   loading: boolean;
   error: string | null;
 
@@ -85,6 +127,7 @@ interface StoreState {
   fetchCourses: () => Promise<void>;
   fetchFiles: () => Promise<void>;
   fetchPlans: () => Promise<void>;
+  fetchSettings: () => Promise<void>;
   setError: (error: string | null) => void;
   clearError: () => void;
 }
@@ -100,6 +143,7 @@ const useStore = create<StoreState>()(
       courses: [],
       files: [],
       plans: [],
+      settings: {},
       loading: false,
       error: null,
 
@@ -113,6 +157,7 @@ const useStore = create<StoreState>()(
             get().fetchCourses(),
             get().fetchFiles(),
             get().fetchPlans(),
+            get().fetchSettings(),
           ]);
           set({ loading: false });
         } catch (error) {
@@ -189,6 +234,18 @@ const useStore = create<StoreState>()(
           if (!response.ok) throw new Error("Failed to fetch plans");
           const data = await response.json();
           set({ plans: data || [] });
+        } catch (error) {
+          console.error("Error fetching plans: ", error);
+          throw error;
+        }
+      },
+
+      fetchSettings: async () => {
+        try {
+          const response = await fetch(`${API_BASE_URL}/settings`);
+          if (!response.ok) throw new Error("Failed to fetch settings");
+          const data = await response.json();
+          set({ settings: data || {} });
         } catch (error) {
           console.error("Error fetching plans: ", error);
           throw error;

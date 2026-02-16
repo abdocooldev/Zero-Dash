@@ -1005,18 +1005,22 @@
     }
   ],
   "settings": {
-    "maintenance": false,
+    "maintenance": true,
     "maintenanceMessage": "",
     "siteName": "Zero Dash",
     "siteLogo": "https://via.placeholder.com/150?text=Zero+Dash",
     "adminEmail": "admin@zerodash.com",
     "password": "********",
+    "passLastChange": "10/02/2026",
+    "AdminFirstName": "",
+    "AdminLastName": "",
     "twoFactorAuth": true,
     "widgetsControl": {
       "quickDraft": true,
       "yearlyTargets": true,
       "ticketsStatistics": true,
       "latestNews": true,
+      "latestTasks": false,
       "topSearchItems": true
     },
     "social": {
@@ -1028,8 +1032,8 @@
     "backup": {
       "lastBackup": "2026-02-01",
       "backupFrequency": {
-        "daily": false,
-        "weekly": true,
+        "daily": true,
+        "weekly": false,
         "monthly": false
       },
       "backupLocation": {
